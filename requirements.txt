@@ -1,0 +1,23 @@
+Bootstrap_Flask==2.2.0
+Flask==2.3.2
+WTForms==3.0.1
+Flask_WTF==1.2.1
+Werkzeug=3.0.0
+
+  <tr>
+               <th>{{cafes[0][1]}}</th>
+               <th>{{cafes[0][2]}}</th>
+               <th>{{cafes[0][3]}}</th>
+               <th>{{cafes[0][4]}}</th>
+               <th>{{cafes[0][5]}}</th>
+               <th>{{cafes[0][6]}}</th>
+               <th>{{cafes[0][7]}}</th>
+           </tr>
+
+          <tr>
+              {% for row in cafes: %}
+                <td>{{row[1][0]}}</td>
+                <td>{{row[2][0]}}</td>
+              {% endfor %}
+          </tr>
+
